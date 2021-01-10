@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "node index.js",
-		"dev": "nodemon index.js"
+		"dev": "nodemon index.js",
+		"test": "./node_modules/.bin/mocha --exit --recursive"
 	},
 	"keywords": [],
 	"author": "Mehmet Seven <mehmetseven0@gmail.com>",
@@ -14,5 +15,10 @@
 		"body-parser": "^1.19.0",
 		"cors": "^2.8.5",
 		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"chai": "^4.2.0",
+		"chai-http": "^4.3.0",
+		"mocha": "^8.2.1"
 	}
 }

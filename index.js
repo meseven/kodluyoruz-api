@@ -20,3 +20,5 @@ app.post('/add-user', (req, res) => {
 });
 
 app.listen(process.env.PORT || 3000, () => console.log('Server is up!'));
+
+module.exports = app;
