@@ -7,6 +7,10 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+	res.end('Hello');
+});
+
 app.get('/users', (req, res) => {
 	res.json([{ name: 'Mehmet' }, { name: 'Ahmet' }]);
 });
