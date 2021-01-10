@@ -8,7 +8,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-	res.end('Hello Express');
+	res.end('Merhaba Express');
 });
 
 app.get('/users', (req, res) => {
