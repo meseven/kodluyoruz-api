@@ -15,4 +15,4 @@ app.post('/add-user', (req, res) => {
 	res.json(req.body);
 });
 
-app.listen(8080, () => console.log('Server is up!'));
+app.listen(process.env.PORT || 3000, () => console.log('Server is up!'));
